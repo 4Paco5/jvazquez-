@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Document</title>
+ 
+</head>
+
+<body>
+    <script>
+        function temperatura(){
+           var temp = parseInt( document.getElementById("temperaturaID").value);
+           alert(typeof temp);
+           if(temp <= 0){
+                document.write("HIELO");
+           }else{
+            if(temp<100) {
+                document.write("LÍQUIDO");
+            }else{
+                document.write("GASEOSO")
+           }
+        }
+    }
+    </script>
+    Temperatura: <input type="text" id="temperaturaID"><br><input value="Ver" onclick="temperatura()" type="button">
+</body>
+</html>
